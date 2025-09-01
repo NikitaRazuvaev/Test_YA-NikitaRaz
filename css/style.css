@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/*Цвета сайта*/
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+:root {
+  --color-text:#313131;
+  --color-accent:#F54932;
+  --fon-dark-btn:#1F1F1F;
+  --color-white:#ffffff;
+  --hover-btn:#FBCE51;
+  --color-disabled:#D6D6D6;
+  --fon-footer:#E9DED4;
+  --color-subbtn:#3057A2;
+  --color-link:#3057A2;
+}
+
+/*Шрифты*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .text-info-title {
+  font-family: "Merriweather", serif;
+}
+
+p, .btn {
+  font-family: "Golos Text", sans-serif;
+}
+
+#header-style {
+  background: url(../img/1920.png);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.1fr;
+}
+#header-style .nav, #header-style .info-header {
+  grid-column: 2;
+}
+#header-style .nav {
+  margin: 25px;
+}
+
+.block-info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-info-header {
+  color: var(--color-text);
+  font-size: 60px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.center-text {
+  color: var(--color-text);
+  font-size: 60px;
+  font-weight: 400;
+  display: flex;
+  margin: 0 25px;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.subtitle {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.btn-blocks {
+  margin-bottom: 80px;
+}
+
+.btn {
+  width: 263px;
+  height: 72px;
+  border: 2px solid var(--fon-dark-btn);
+  padding: 20px;
+  border-radius: 66px;
+  background: none;
+  font-size: 16px;
+  display: inline-flex;
+  gap: 0 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-dark {
+  background: var(--fon-dark-btn);
+  color: var(--color-white);
+}
+
+.btn-dark:hover {
+  border-color: var(--hover-btn);
+  background-color: var(--hover-btn);
+  color: var(--fon-dark-btn);
+}
+
+.btn-light:hover {
+  background-color: var(--fon-dark-btn);
+  color: var(--color-white);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  padding: 18px 0;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee__content {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.running-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.marquee:hover .marquee__content {
+  animation-play-state: paused;
+}
+
+.text-info-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 1.5em;
+}
+
+.text-accent {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.block-left-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.block-right-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  justify-items: center;
+  align-items: center;
+}
+.block-right-text .img-left {
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.tabel-info {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.footer-info {
+  background-color: var(--fon-footer);
+  display: flex;
+  padding: 35px 15px 10px 25px;
+  color: var(--color-text);
+  height: 75px;
+}
+
+.text-info {
+  font-size: 16px;
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+}
+
+.red-strike {
+  position: relative;
+  color: var(--color-text);
+}
+
+.red-strike::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent);
+  transform: translateY(-50%);
+}/*# sourceMappingURL=style.css.map */
