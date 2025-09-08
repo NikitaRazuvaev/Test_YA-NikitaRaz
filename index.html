@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Клуб четырех коней</title>
@@ -27,7 +27,8 @@
                     <button class="btn btn-light">Подробнее<br>о турнире</button>
                 </div>
             </div>
-
+        </section>
+        <section class="spase-marquee">
             <div class="marquee">
                 <div class="marquee__content">
                     <span class="running-line">Дело помощи утопающим — дело рук самих утопающих! <svg width="6"
@@ -57,10 +58,11 @@
             </div>
         </section>
     </header>
-    <main>
+    <main id="main-style">
         <section class="anons">
             <div class="block-left-text">
-                <p class="text-info-title">Чтобы поддержать Международный васюкинский турнир посетите лекцию на тему:
+                <p class="text-info-title">Чтобы поддержать <br> Международный васюкинский <br>турнир посетите лекцию
+                    на тему:
                     <span class="text-accent">«Плодотворная дебютная идея»</span>
                 </p>
                 <img class="img-right" src="img/Mask-group.png" alt="">
@@ -70,35 +72,29 @@
                 <div class="block-info-table">
                     <p class="text-info-title">и Сеанс <span class="text-accent">одновременной игры в шахматы
                             на 160 досках</span> гроссмейстера О. Бендера</p>
-                    <table class="tabel-info">
-                        <tr>
-                            <td>Место проведения:</td>
-                            <th>Клуб «Картонажник»</th>
-                        </tr>
-                        <tr>
-                            <td>Дата и время мероприятия:</td>
-                            <th>22 июня 1927 г. в 18:00</th>
-                        </tr>
-                        <tr>
-                            <td>Стоимость входных билетов:</td>
-                            <th>20 коп.</th>
-                        </tr>
-                        <tr>
-                            <td>Плата за игру:</td>
-                            <th>50 коп.</th>
-                        </tr>
-                        <tr>
-                            <td>Взнос на телеграммы:</td>
-                            <th><span class="red-strike">100 руб.</span> 21 руб. 16 коп.</th>
-                        </tr>
-                    </table>
+                    <div class="tabel-info">
+                        <div class="column-tabel t-c-one">
+                            <p>Место проведения:</p>
+                            <p>Дата и время мероприятия:</p>
+                            <p>Стоимость входных билетов:</p>
+                            <p>Плата за игру:</p>
+                            <p>Взнос на телеграммы:</p>
+                        </div>
+                        <div class="column-tabel t-c-two">
+                            <p>Клуб «Картонажник»</p>
+                            <p>22 июня 1927 г. в 18:00</p>
+                            <p>20 коп.</p>
+                            <p>50 коп.</p>
+                            <p><span class="red-strike">100 руб.</span> 21 руб. 16 коп.</p>
+                        </div>
+                    </div>
                     <a href="#" class="style-link">По всем вопросам обращаться в администрацию к К. Михельсону</a>
                 </div>
             </div>
         </section>
         <section class="stages-info">
             <div class="title-item">
-                <p class="title-stages">Этапы преображения Васюков</p>
+                <p class="title-stages">Этапы преображения <br>Васюков</p>
                 <a href="#" class="style-link">Будущие источники<br>обогащения васюкинцев</a>
             </div>
             <div class="items-stagwes">
@@ -159,7 +155,7 @@
                         <p>Создание аэропорта «Большие Васюки» с регулярным отправлением почтовых самолётов и дирижаблей
                             во все концы света, включая Лос-Анжелос и Мельбурн</p>
                     </div>
-                    <img src="img/pilot.png" alt="">
+                    <img src="img/pilot.png" alt="" class="pilot">
                 </div>
             </div>
         </section>
